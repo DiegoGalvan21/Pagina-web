@@ -3,30 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¿Que son?</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>¿Qué son las Redes Neuronales?</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    
+    .ult_img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+        height: 0;
+        overflow: hidden;
+        margin-top: 20px;
+        border-radius: 8px;
+}
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+}
+
+        body {
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .img_container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 30%;
+            height: auto;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 30px;
+            background-color: #5a5454;
+        }
+
+    </style>
 </head>
-<body>
+<body> 
+    <nav class="navbar">    
+        <a href="index.html">Inicio</a>      
+    </nav>  
     <header>
-        <h1>¿Qué son?</h1>
-        <nav>
-            <a href="index.html">Inicio</a>
-        </nav>
+        <h1 style="text-align: center; color: #f8f8f8; font-size: 2.5em; margin-bottom: 20px;">¿Qué son las Redes Neuronales?</h1>
     </header>
     <main class="container">
+        <article>
+            <h2>Definición General</h2>
+            <p>Las redes neuronales son un tipo de modelo de inteligencia artificial inspirado en el funcionamiento del cerebro humano. Se utilizan para reconocer patrones, aprender de datos y hacer predicciones o decisiones. Son especialmente útiles en tareas complejas como:</p>
+            <ul>
+                <li><br>Reconocimiento de imágenes y voz</li>
+                <li>Traducción automática</li>
+                <li>Diagnóstico médico</li>
+                <li>Juegos y simulaciones</li>
+                <li>Predicción de precios, tendencias, etc.</li>
+            </ul>
+            
+            <div class="img_container">
+                <img src="images_1/que_son_1.png" alt="Imagen de Redes Neuronales">
+            </div>
+            <h3>Componentes Clave</h3>
+            <p>Las redes neuronales están compuestas:</p>
+            <ul>
+                <li><strong>Neuronas:</strong> Unidades básicas que procesan información.</li>
+                <li><strong>Capas:</strong> Agrupaciones de neuronas; pueden ser de entrada, ocultas o de salida.</li>
+                <li><strong>Pesos:</strong> Parámetros que ajustan la importancia de las conexiones entre neuronas.</li>
+                <li><strong>Función de activación:</strong> Determina si una neurona se activa o no.</li>
+            </ul>
+            <div class="img_container">
+                <img src="images_1/que_son_2.png" alt="Diagrama de una Red Neuronal">
+            </div>
         <section>
-            <h2>Definicion general</h2>
-            <p>Las redes neuronales son un tipo de modelo de inteligencia artificial
-                inspirado en el funcionamiento del cerebro humano. Se utilizan para 
-                reconnocer patrones, aprender de datos y hacer prediccio es o decisiones. 
-                Son epecialmente útiles en tareas complejas como:<br>
-                <br>Reconocimiento de imágenes y voz<br>Traducción automática<br>Diadnóstico médico<br>Juegos y simulaciones<br>Predicción de precios, tendencias, etc<br>
+            <h2>¿Como Aprenden?</h2>
+            <p>Para una comprensión más visual, puedes ver el siguiente video que explica los componentes de las redes neuronales y como</p>        
+            <div class="video-container">
+                <iframe width="280" height="157" 
+                    src="https://www.youtube.com/embed/czMOenEc8fI?feature=shared" 
+                    title="Video youtube-Redes Neuronales" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+        </section>        
+            </div>
+            <h2><br>¿Donde empezar?</h2>
+            <p>Para comenzar a trabajar con redes neuronales, puedes explorar las siguientes herramientas y recursos:</p>
+            <ul>
+                <li><br><a href="https://www.tensorflow.org/">TensorFlow</a>: Una biblioteca de código abierto para el aprendizaje automático.</li>
+                <li><a href="https://pytorch.org/">PyTorch</a>: Otra biblioteca popular para construir y entrenar redes neuronales.</li>
+                <li><a href="https://www.kaggle.com/">Kaggle</a>: Una plataforma para practicar y competir en proyectos de ciencia de datos.</li>
+                <li><a href="https://www.coursera.org/">Coursera</a>: Ofrece cursos sobre redes neuronales y aprendizaje profundo.</li>
+            </ul>
+            <p><br>Estos recursos te ayudarán a familiarizarte con los conceptos y herramientas necesarias para trabajar con redes neuronales.</p>
+            <div class="img_container">
+                <img src="images_1/que_son_3.png" alt="Herramientas de Redes Neuronales" class="ult_img">
+            </div>
+        </article>    
 
-            </p>
-    <div class="imag_container">
-        <img src="images_1/que_son.jpg" alt="Diagram showing interconnected artificial neural network nodes exchanging signals, set against a digital background with blue tones, conveying a sense of advanced technology and innovation">
-        </section>
     </main>
-    
+    <footer>
+        <p>&copy; 2025 Redes Neuronales. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
