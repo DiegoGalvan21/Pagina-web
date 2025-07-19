@@ -7,10 +7,23 @@
     <link rel="stylesheet" href="style.css">
     <style>
     
-    .ult_img {
+
+
+    .titulo-con-imagen {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* empuja la imagen a la derecha */
+}
+
+    .titulo-con-imagen img {
+        width: 40px; /* ajusta el tamaño según tu imagen */
+        height: auto;
+}
+
+    .smooth_img {
         display: block;
         margin: 0 auto;
-        border-radius: 8px;
+        border-radius: 40px;
         box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -69,11 +82,14 @@
         <a href="index.html">Inicio</a>      
     </nav>  
     <header>
-        <h1 style="text-align: center; color: #f8f8f8; font-size: 2.5em; margin-bottom: 20px;">¿Qué son las Redes Neuronales?</h1>
+        <div class="titulo-con-imagen">
+            <h1 style="text-align: center; color: #f8f8f8; font-size: 3em; margin-bottom: 20px; text-shadow:2px 10px 4px rgba(0,0,0,0.5);">¿Qué son las Redes Neuronales?</h1>
+            <img src="images_1/deeplearn_logo.png" alt="Logo_deepleern"" style="width: 200px; height: auto; margin-left: 190px;">
+        </div>
     </header>
     <main class="container">
         <article>
-            <h2>Definición General</h2>
+            <h2>En General...</h2>
             <p>Las redes neuronales son un tipo de modelo de inteligencia artificial inspirado en el funcionamiento del cerebro humano. Se utilizan para reconocer patrones, aprender de datos y hacer predicciones o decisiones. Son especialmente útiles en tareas complejas como:</p>
             <ul>
                 <li><br>Reconocimiento de imágenes y voz</li>
@@ -84,7 +100,7 @@
             </ul>
             
             <div class="img_container">
-                <img src="images_1/que_son_1.png" alt="Imagen de Redes Neuronales">
+                <img src="images_1/que_son_1.png" alt="Imagen de Redes Neuronales" class="smooth_img">
             </div>
             <h3>Componentes Clave</h3>
             <p>Las redes neuronales están compuestas:</p>
@@ -95,11 +111,11 @@
                 <li><strong>Función de activación:</strong> Determina si una neurona se activa o no.</li>
             </ul>
             <div class="img_container">
-                <img src="images_1/que_son_2.png" alt="Diagrama de una Red Neuronal">
+                <img src="images_1/que_son_2.png" alt="Diagrama de una Red Neuronal" class="smooth_img">
             </div>
         <section>
             <h2>¿Como Aprenden?</h2>
-            <p>Para una comprensión más visual, puedes ver el siguiente video que explica los componentes de las redes neuronales y como estos "aprende a aprender" completamente desde cero.</p>        
+            <p>Para una comprensión más visual, puedes ver el siguiente video que explica los componentes de las redes neuronales y como estos "aprenden a aprender" completamente desde cero.</p>        
             <div class="video-container">
                 <iframe width="280" height="157" 
                     src="https://www.youtube.com/embed/czMOenEc8fI?feature=shared" 
@@ -120,10 +136,10 @@
             </ul>
             <p><br>Estos recursos te ayudarán a familiarizarte con los conceptos y herramientas necesarias para trabajar con redes neuronales.</p>
             <div class="img_container">
-                <img src="images_1/que_son_3.png" alt="Herramientas de Redes Neuronales" class="ult_img">
+                <img src="images_1/que_son_3.png" alt="Herramientas de Redes Neuronales" class="smooth_img">
             </div>
             <h2><br>Empieza por ejemplos practicos.</h2>
-            <p><br>Para comenzar a trabajar con redes neuronales, es útil seguir ejemplos prácticos y no es extraño que github tenga los mejores ejemplos hechos por la comunidad ya que la comunidad de Github constantemente esta al frente cuando se trata de enseñar a nuevos entusiastas en el mundo informatico, asi que te vendria abien darle un vistaso a los siguientes repositorios:</p>
+            <p><br>Para comenzar a trabajar con redes neuronales, es útil seguir ejemplos prácticos y no es extraño que github tenga los mejores ejemplos hechos por la comunidad ya que la comunidad de Github constantemente esta al frente cuando se trata de enseñar a nuevos entusiastas en el mundo informatico, asi que te vendria bien darle un vistaso a los siguientes repositorios:</p>
             <ul>
                 <li><br><a href="https://github.com/nauticaweb/InteleigenciaArtificial"><strong>NauticaWeb - Inteligencia Artificial</strong></a>: Un repositorio que contiene ejemplos prácticos de redes neuronales y aprendizaje automático.</li>
                 <li><a href="https://github.com/VMijangos/Redes_Neuronales"><strong>VMijangos - Redes Neuronales</strong>></a>: Un proyecto que explora diferentes arquitecturas de redes neuronales y sus aplicaciones.</li>
@@ -131,13 +147,21 @@
             </ul>
             <p><br>Estos repositorios te proporcionarán una base sólida para comenzar a experimentar con redes neuronales y aprender a construir tus propios modelos.</p>
             <div class="img_container">
-                <img src="images_1/que_son_4.png" alt="Ejemplos de Redes Neuronales" class="ult_img">
+                <img src="images_1/que_son_4.png" alt="Ejemplos de Redes Neuronales" class="smooth_img">
             </div>
-        </article>    
+        </article>
+
+        <h2>Referencias:</h2>
+        <ul>
+            <li>Goodfellow, Bengio & Courville. Deep Learning. MIT Press.</li>
+            <li>Documentación oficial de TensorFlow: tensorflow.org</li>
+            <li>Curso de Deep Learning - Andrew Ng, Coursera</li>
+        </ul>
+    
 
     </main>
     <footer>
-        <p>&copy; 2025 Redes Neuronales. Todos los derechos reservados.</p>
+        <p>&copy; 2025 DeepLearn. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
